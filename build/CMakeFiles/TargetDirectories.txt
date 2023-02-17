@@ -1,0 +1,5 @@
+C:/dev/VSCode/BankSystem/build/CMakeFiles/BankSystem.dir
+C:/dev/VSCode/BankSystem/build/CMakeFiles/package.dir
+C:/dev/VSCode/BankSystem/build/CMakeFiles/package_source.dir
+C:/dev/VSCode/BankSystem/build/CMakeFiles/edit_cache.dir
+C:/dev/VSCode/BankSystem/build/CMakeFiles/rebuild_cache.dir

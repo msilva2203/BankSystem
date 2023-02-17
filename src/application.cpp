@@ -10,8 +10,6 @@ Application::Application(const std::string& name)
     _appName = name;
 
     Debug::PrintString("Application Initialized: " + GetAppName());
-
-    SetIsRunning();
 }
 
 Application::~Application()
@@ -21,6 +19,8 @@ Application::~Application()
 
 void Application::Run()
 {
+    SetIsRunning();
+
     while (IsRunning())
     {
         Debug::Delay(5.0);

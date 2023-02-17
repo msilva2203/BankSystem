@@ -149,8 +149,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/dev/VSCode/BankSystem/build",
-		"source" : "C:/dev/VSCode/BankSystem"
+		"build" : "C:/dev/vscode/BankSystem/build",
+		"source" : "C:/dev/vscode/BankSystem"
 	},
 	"version" : 
 	{

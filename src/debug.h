@@ -34,7 +34,17 @@ class Debug
         }
     }
 
-    static void Delay(double time = 0.0f)
+    static inline void EndLine()
+    {
+        std::cout << std::endl;
+    }
+
+    static inline void Tab()
+    {
+        std::cout << "\t";
+    }
+
+    static void Delay(double time = 0.25f)
     {
         time = Math::Clamp(time, 0.0, 10000.0);
 

@@ -12,6 +12,11 @@ class Application
     ~Application();
 
     void Run();
+    const std::string& GetUserInput();
+    inline void ShowMainMenu();
+    inline void ShowAddMenu();
+    inline void ShowRemoveMenu();
+    inline void ShowPrintMenu();
 
     const std::string& GetAppName() const { return _appName; }
     void SetAppName(const std::string& name) { _appName = name; }
@@ -20,6 +25,7 @@ class Application
 
     private:
     std::string _appName;
+    std::string _input;
     Manager manager;
     bool _isRunning;
 

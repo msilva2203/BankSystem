@@ -11,7 +11,5 @@ int main(int, char**) {
     app.Run();
     app.~Application();
 
-    Debug::Delay(1.0);
-
     return 0;
 }

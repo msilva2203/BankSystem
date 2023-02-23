@@ -1,6 +1,6 @@
 CMakeFiles/BankSystem.dir/src/application.cpp.obj: \
- C:\dev\VSCode\BankSystem\src\application.cpp \
- C:\dev\VSCode\BankSystem\src\application.h \
+ C:\dev\vscode\BankSystem\src\application.cpp \
+ C:\dev\vscode\BankSystem\src\application.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
@@ -79,15 +79,15 @@ CMakeFiles/BankSystem.dir/src/application.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\functional_hash.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hash_bytes.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc \
- C:\dev\VSCode\BankSystem\src\manager.h \
+ C:\dev\vscode\BankSystem\src\manager.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
- C:\dev\VSCode\BankSystem\src\types.h \
- C:\dev\VSCode\BankSystem\src\debug.h \
+ C:\dev\vscode\BankSystem\src\types.h \
+ C:\dev\vscode\BankSystem\src\debug.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \
@@ -115,4 +115,4 @@ CMakeFiles/BankSystem.dir/src/application.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ctime c:\mingw\include\time.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\parse_numbers.h \
- C:\dev\VSCode\BankSystem\src\math.h
+ C:\dev\vscode\BankSystem\src\math.h

@@ -17,6 +17,9 @@ class Application
     inline void ShowAddMenu();
     inline void ShowRemoveMenu();
     inline void ShowPrintMenu();
+    inline void ShowCheckMenu();
+    inline void ShowFundMenu();
+    inline void ShowInfoMenu();
 
     const std::string& GetAppName() const { return _appName; }
     void SetAppName(const std::string& name) { _appName = name; }

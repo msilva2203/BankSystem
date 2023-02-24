@@ -13,6 +13,19 @@ struct Account
     Account(const std::string& name, int id, int balance) : _name(name), _id(id), _balance(balance) {}
 
     const std::string& GetName() const { return _name; }
-    int GetId() const { return _id; }
-    int GetBalance() const { return _balance; }
+    int GetId() { return _id; }
+    int GetBalance() { return _balance; }
+    void OffsetBalance(int offset) { _balance += offset; }
+};
+
+struct SearchResult
+{
+    Account _account;
+    bool _found;
+
+    SearchResult(bool found) : _account({"none", 0, 0}), _found(found) {}
+    SearchResult(Account account, bool found = true) : _account(account), _found(found) {}
+
+    bool IsFound() { return _found; }
+    const Account& GetAccount() const { return _account; }
 };

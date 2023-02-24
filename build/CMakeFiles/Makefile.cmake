@@ -28,7 +28,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/cmake/share/cmake-3.25/Modules/Platform/Windows-windres.cmake"
   "C:/cmake/share/cmake-3.25/Modules/Platform/Windows.cmake"
   "C:/cmake/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake"
-  "C:/dev/vscode/BankSystem/CMakeLists.txt"
+  "C:/dev/VSCode/BankSystem/CMakeLists.txt"
   "CMakeFiles/3.25.0-rc1/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.0-rc1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.0-rc1/CMakeRCCompiler.cmake"

@@ -3,7 +3,6 @@
 //
 
 #include "src/application.h"
-#include <iostream>
 #include "src/debug.h"
 
 int main(int, char**) {

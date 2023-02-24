@@ -1,4 +1,4 @@
-# Install script for directory: C:/dev/vscode/BankSystem
+# Install script for directory: C:/dev/VSCode/BankSystem
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/dev/vscode/BankSystem/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/dev/VSCode/BankSystem/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

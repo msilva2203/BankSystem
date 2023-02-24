@@ -1,6 +1,6 @@
 CMakeFiles/BankSystem.dir/src/manager.cpp.obj: \
- C:\dev\vscode\BankSystem\src\manager.cpp \
- C:\dev\vscode\BankSystem\src\manager.h \
+ C:\dev\VSCode\BankSystem\src\manager.cpp \
+ C:\dev\VSCode\BankSystem\src\manager.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
@@ -42,7 +42,7 @@ CMakeFiles/BankSystem.dir/src/manager.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hash_bytes.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\range_access.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
- C:\dev\vscode\BankSystem\src\types.h \
+ C:\dev\VSCode\BankSystem\src\types.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stringfwd.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h \
@@ -86,7 +86,7 @@ CMakeFiles/BankSystem.dir/src/manager.cpp.obj: \
  c:\mingw\include\stdio.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cerrno \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc \
- C:\dev\vscode\BankSystem\src\debug.h \
+ C:\dev\VSCode\BankSystem\src\debug.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \
@@ -114,4 +114,4 @@ CMakeFiles/BankSystem.dir/src/manager.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ctime c:\mingw\include\time.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\parse_numbers.h \
- C:\dev\vscode\BankSystem\src\math.h
+ C:\dev\VSCode\BankSystem\src\math.h

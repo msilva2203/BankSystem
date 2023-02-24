@@ -52,10 +52,10 @@ RM = C:\cmake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\dev\vscode\BankSystem
+CMAKE_SOURCE_DIR = C:\dev\VSCode\BankSystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\dev\vscode\BankSystem\build
+CMAKE_BINARY_DIR = C:\dev\VSCode\BankSystem\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/BankSystem.dir/depend.make
@@ -69,46 +69,46 @@ include CMakeFiles/BankSystem.dir/progress.make
 include CMakeFiles/BankSystem.dir/flags.make
 
 CMakeFiles/BankSystem.dir/main.cpp.obj: CMakeFiles/BankSystem.dir/flags.make
-CMakeFiles/BankSystem.dir/main.cpp.obj: C:/dev/vscode/BankSystem/main.cpp
+CMakeFiles/BankSystem.dir/main.cpp.obj: C:/dev/VSCode/BankSystem/main.cpp
 CMakeFiles/BankSystem.dir/main.cpp.obj: CMakeFiles/BankSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\vscode\BankSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BankSystem.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BankSystem.dir/main.cpp.obj -MF CMakeFiles\BankSystem.dir\main.cpp.obj.d -o CMakeFiles\BankSystem.dir\main.cpp.obj -c C:\dev\vscode\BankSystem\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\VSCode\BankSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BankSystem.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BankSystem.dir/main.cpp.obj -MF CMakeFiles\BankSystem.dir\main.cpp.obj.d -o CMakeFiles\BankSystem.dir\main.cpp.obj -c C:\dev\VSCode\BankSystem\main.cpp
 
 CMakeFiles/BankSystem.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BankSystem.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\vscode\BankSystem\main.cpp > CMakeFiles\BankSystem.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\VSCode\BankSystem\main.cpp > CMakeFiles\BankSystem.dir\main.cpp.i
 
 CMakeFiles/BankSystem.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BankSystem.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\vscode\BankSystem\main.cpp -o CMakeFiles\BankSystem.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\VSCode\BankSystem\main.cpp -o CMakeFiles\BankSystem.dir\main.cpp.s
 
 CMakeFiles/BankSystem.dir/src/application.cpp.obj: CMakeFiles/BankSystem.dir/flags.make
-CMakeFiles/BankSystem.dir/src/application.cpp.obj: C:/dev/vscode/BankSystem/src/application.cpp
+CMakeFiles/BankSystem.dir/src/application.cpp.obj: C:/dev/VSCode/BankSystem/src/application.cpp
 CMakeFiles/BankSystem.dir/src/application.cpp.obj: CMakeFiles/BankSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\vscode\BankSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BankSystem.dir/src/application.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BankSystem.dir/src/application.cpp.obj -MF CMakeFiles\BankSystem.dir\src\application.cpp.obj.d -o CMakeFiles\BankSystem.dir\src\application.cpp.obj -c C:\dev\vscode\BankSystem\src\application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\VSCode\BankSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BankSystem.dir/src/application.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BankSystem.dir/src/application.cpp.obj -MF CMakeFiles\BankSystem.dir\src\application.cpp.obj.d -o CMakeFiles\BankSystem.dir\src\application.cpp.obj -c C:\dev\VSCode\BankSystem\src\application.cpp
 
 CMakeFiles/BankSystem.dir/src/application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BankSystem.dir/src/application.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\vscode\BankSystem\src\application.cpp > CMakeFiles\BankSystem.dir\src\application.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\VSCode\BankSystem\src\application.cpp > CMakeFiles\BankSystem.dir\src\application.cpp.i
 
 CMakeFiles/BankSystem.dir/src/application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BankSystem.dir/src/application.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\vscode\BankSystem\src\application.cpp -o CMakeFiles\BankSystem.dir\src\application.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\VSCode\BankSystem\src\application.cpp -o CMakeFiles\BankSystem.dir\src\application.cpp.s
 
 CMakeFiles/BankSystem.dir/src/manager.cpp.obj: CMakeFiles/BankSystem.dir/flags.make
-CMakeFiles/BankSystem.dir/src/manager.cpp.obj: C:/dev/vscode/BankSystem/src/manager.cpp
+CMakeFiles/BankSystem.dir/src/manager.cpp.obj: C:/dev/VSCode/BankSystem/src/manager.cpp
 CMakeFiles/BankSystem.dir/src/manager.cpp.obj: CMakeFiles/BankSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\vscode\BankSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BankSystem.dir/src/manager.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BankSystem.dir/src/manager.cpp.obj -MF CMakeFiles\BankSystem.dir\src\manager.cpp.obj.d -o CMakeFiles\BankSystem.dir\src\manager.cpp.obj -c C:\dev\vscode\BankSystem\src\manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\VSCode\BankSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BankSystem.dir/src/manager.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BankSystem.dir/src/manager.cpp.obj -MF CMakeFiles\BankSystem.dir\src\manager.cpp.obj.d -o CMakeFiles\BankSystem.dir\src\manager.cpp.obj -c C:\dev\VSCode\BankSystem\src\manager.cpp
 
 CMakeFiles/BankSystem.dir/src/manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BankSystem.dir/src/manager.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\vscode\BankSystem\src\manager.cpp > CMakeFiles\BankSystem.dir\src\manager.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\VSCode\BankSystem\src\manager.cpp > CMakeFiles\BankSystem.dir\src\manager.cpp.i
 
 CMakeFiles/BankSystem.dir/src/manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BankSystem.dir/src/manager.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\vscode\BankSystem\src\manager.cpp -o CMakeFiles\BankSystem.dir\src\manager.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\VSCode\BankSystem\src\manager.cpp -o CMakeFiles\BankSystem.dir\src\manager.cpp.s
 
 # Object files for target BankSystem
 BankSystem_OBJECTS = \
@@ -126,7 +126,7 @@ BankSystem.exe: CMakeFiles/BankSystem.dir/build.make
 BankSystem.exe: CMakeFiles/BankSystem.dir/linkLibs.rsp
 BankSystem.exe: CMakeFiles/BankSystem.dir/objects1
 BankSystem.exe: CMakeFiles/BankSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\dev\vscode\BankSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable BankSystem.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\dev\VSCode\BankSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable BankSystem.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BankSystem.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/BankSystem.dir/clean:
 .PHONY : CMakeFiles/BankSystem.dir/clean
 
 CMakeFiles/BankSystem.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\dev\vscode\BankSystem C:\dev\vscode\BankSystem C:\dev\vscode\BankSystem\build C:\dev\vscode\BankSystem\build C:\dev\vscode\BankSystem\build\CMakeFiles\BankSystem.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\dev\VSCode\BankSystem C:\dev\VSCode\BankSystem C:\dev\VSCode\BankSystem\build C:\dev\VSCode\BankSystem\build C:\dev\VSCode\BankSystem\build\CMakeFiles\BankSystem.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/BankSystem.dir/depend
 

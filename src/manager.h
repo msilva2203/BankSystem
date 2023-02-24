@@ -11,15 +11,20 @@ class Manager
     Manager();
     ~Manager();
 
-    inline void AddUser(Account account);
-    inline void RemoveUser(int index);
+    void AddUser(Account account);
+    void RemoveUser(int id);
+    void AddFundsToAccount(int id, int funds);
 
     const std::vector<Account>& GetUsers() const { return _users; }
     int const GetSize() const { return _users.size(); }
-    int FindAccountById(int id);
+    SearchResult FindAccountById(int id);
     bool IsIdValid(int id);
+    bool IsEmpty() const { return _users.empty(); }
+    static void PrintAccountData(Account account);
 
     private:
     std::vector<Account> _users;
+
+    int GetAccountSystemIndex(int id);
 
 };

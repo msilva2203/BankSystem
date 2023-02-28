@@ -6,9 +6,11 @@
 #include "src/debug.h"
 
 int main(int, char**) {
-    Application app("Bank");
+    Application app("Bank", "../files/");
     app.Run();
     app.~Application();
+
+    Debug::Delay();
 
     return 0;
 }

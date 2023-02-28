@@ -8,7 +8,7 @@
 class Application
 {
     public:
-    Application(const std::string& name = "Default App");
+    Application(const std::string& name = "Default App", const std::string& path = "../files/");
     ~Application();
 
     void Run();
@@ -29,6 +29,7 @@ class Application
     private:
     std::string _appName;
     std::string _input;
+    std::string _path = "..//files//";
     Manager manager;
     bool _isRunning;
 

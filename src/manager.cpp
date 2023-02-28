@@ -8,6 +8,13 @@
 Manager::Manager()
 {
     //Debug::PrintString("Manager constructed!");
+
+    _users.push_back({"Marco", 1, 100});
+    _users.push_back({"Diogo", 5, 90});
+    _users.push_back({"Matilde", 3, 1233});
+    _users.push_back({"Bruno", 11, 10023});
+    _users.push_back({"Alexandre", 19, 10065});
+    _users.push_back({"Daniela", 17, 14});
 }
 
 Manager::~Manager()
@@ -68,12 +75,97 @@ bool Manager::IsIdValid(int id)
 
 void Manager::PrintAccountData(Account account)
 {
-    Debug::PrintString("-----------------------------------");
+    Debug::PrintString("-----------------------------------", EFormat::END_LINE);
     Debug::PrintString("\tNAME: ", EFormat::STAY_LINE);
-    Debug::PrintString(account.GetName());
+    Debug::PrintString(account.GetName(), EFormat::END_LINE);
     Debug::PrintString("\tIDENTIFICATION: ", EFormat::STAY_LINE);
-    Debug::PrintString(account.GetId());
+    Debug::PrintString(account.GetId(), EFormat::END_LINE);
     Debug::PrintString("\tBALANCE: ", EFormat::STAY_LINE);
-    Debug::PrintString(account.GetBalance());
-    Debug::PrintString("-----------------------------------");
+    Debug::PrintString(account.GetBalance(), EFormat::END_LINE);
+    Debug::PrintString("-----------------------------------", EFormat::END_LINE);
+}
+
+void Manager::PrintAccountDataToFile(Account account, std::ofstream& file)
+{
+    file << "-----------------------------------" << std::endl;
+    file << "\tNAME: ";
+    file << account.GetName() << std::endl;
+    file << "\tIDENTIFICATION: ";
+    file << account.GetId() << std::endl;
+    file << "\tBALANCE: ";
+    file << account.GetBalance() << std::endl;
+    file << "-----------------------------------" << std::endl;
+}
+
+const std::vector<Account> Manager::GetFilteredUsers(const EOrder order)
+{
+    if (GetUsers().size() < 2) return GetUsers();
+
+    return Manager::GetOrderedUsers(GetUsers(), order);
+}
+
+std::vector<Account> Manager::GetOrderedUsers(std::vector<Account> users, const EOrder order)
+{
+    bool complete = false;
+
+    switch (order)
+    {
+        case (EOrder::ID):
+        {
+            Debug::PrintString("Ordering by ID");
+            while (!complete)
+            {
+                complete = true;
+                for (int i = 1; i < users.size(); i++)
+                {
+                    if (users[i].GetId() < users[i - 1].GetId())
+                    {
+                    std::swap(users[i], users[i - 1]);
+                    complete = false;
+                    }
+                }
+            }
+            return users;
+        }
+
+        case (EOrder::BALANCE):
+            {
+                Debug::PrintString("Ordering by balance");
+                while (!complete)
+                {
+                    complete = true;
+                    for (int i = 1; i < users.size(); i++)
+                    {
+                        if (users[i].GetBalance() < users[i - 1].GetBalance())
+                        {
+                            std::swap(users[i], users[i - 1]);
+                            complete = false;
+                        }
+                    }
+                }
+                return users;
+            }
+
+        case (EOrder::NAME):
+        {
+            Debug::PrintString("Ordering by Name");
+            while (!complete)
+            {
+                complete = true;
+                for (int i = 1; i < users.size(); i++)
+                {
+                    if (users[i].GetName() < users[i - 1].GetName())
+                    {
+                        std::swap(users[i], users[i - 1]);
+                        complete = false;
+                    }
+                }
+            }
+            return users;
+        }
+        
+
+        default:
+        return users;
+    }
 }

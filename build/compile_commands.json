@@ -1,17 +1,17 @@
 [
 {
-  "directory": "C:/dev/VSCode/BankSystem/build",
-  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\BankSystem.dir\\main.cpp.obj -c C:\\dev\\VSCode\\BankSystem\\main.cpp",
-  "file": "C:/dev/VSCode/BankSystem/main.cpp"
+  "directory": "C:/dev/vscode/BankSystem/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\BankSystem.dir\\main.cpp.obj -c C:\\dev\\vscode\\BankSystem\\main.cpp",
+  "file": "C:/dev/vscode/BankSystem/main.cpp"
 },
 {
-  "directory": "C:/dev/VSCode/BankSystem/build",
-  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\BankSystem.dir\\src\\application.cpp.obj -c C:\\dev\\VSCode\\BankSystem\\src\\application.cpp",
-  "file": "C:/dev/VSCode/BankSystem/src/application.cpp"
+  "directory": "C:/dev/vscode/BankSystem/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\BankSystem.dir\\src\\application.cpp.obj -c C:\\dev\\vscode\\BankSystem\\src\\application.cpp",
+  "file": "C:/dev/vscode/BankSystem/src/application.cpp"
 },
 {
-  "directory": "C:/dev/VSCode/BankSystem/build",
-  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\BankSystem.dir\\src\\manager.cpp.obj -c C:\\dev\\VSCode\\BankSystem\\src\\manager.cpp",
-  "file": "C:/dev/VSCode/BankSystem/src/manager.cpp"
+  "directory": "C:/dev/vscode/BankSystem/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\BankSystem.dir\\src\\manager.cpp.obj -c C:\\dev\\vscode\\BankSystem\\src\\manager.cpp",
+  "file": "C:/dev/vscode/BankSystem/src/manager.cpp"
 }
 ]

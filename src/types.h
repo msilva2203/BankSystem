@@ -29,3 +29,10 @@ struct SearchResult
     bool IsFound() { return _found; }
     const Account& GetAccount() const { return _account; }
 };
+
+enum class EOrder
+{
+    ID = 0,
+    BALANCE = 1,
+    NAME = 2
+};

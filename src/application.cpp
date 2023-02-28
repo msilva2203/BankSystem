@@ -2,12 +2,16 @@
 // Created by Marco Silva on 17/02/2023
 //
 
+#include <fstream>
+#include <chrono>
+#include <ctime>
 #include "application.h"
 #include "debug.h"
 
-Application::Application(const std::string& name)
+Application::Application(const std::string& name, const std::string& path)
 {
     _appName = name;
+    _path = path;
 
     Debug::PrintString("Application Initialized: " + GetAppName());
     Debug::EndLine();
@@ -18,7 +22,6 @@ Application::~Application()
 {
     Debug::PrintString("Application Closed: " + GetAppName());
     Debug::EndLine();
-    Debug::Delay();
 }
 
 void Application::Run()
@@ -49,11 +52,12 @@ inline void Application::ShowMainMenu()
     Debug::PrintString("4 - Check Account");
     Debug::PrintString("5 - Add funds to account");
     Debug::PrintString("9 - Information");
+    Debug::EndLine();
 
     int input = -1;
 
     input = std::stoi(GetUserInput());
-    while (input < 0 || input > 9)
+    while (!Math::InRange_2(input, 0, 5, 9, 9))
     {
         Debug::PrintString("Your input does not correspond to any of the available options. Try again...");
         input = std::stoi(GetUserInput());
@@ -213,20 +217,73 @@ inline void Application::ShowPrintMenu()
     }
 
     Debug::PrintString("PRINTING");
+    Debug::EndLine();
+
+    int input = -1;
+
+    Debug::PrintString("Print Users in order:");
+    Debug::PrintString("0 - ID");
+    Debug::PrintString("1 - BALANCE");
+    Debug::PrintString("2 - NAME");
+    Debug::EndLine();
+
+    while (!Math::InRange(input, 0, 2))
+    {
+        input = std::stoi(GetUserInput());
+
+        if (!Math::InRange(input, 0, 2)) Debug::PrintString("Your input does not correspond to any option. Try again...");
+    }
+
+    EOrder order = (EOrder)input;
 
     int size = manager.GetSize();
     int iteration = 1;
-    std::vector<Account> users = manager.GetUsers();
+
+    time_t t = time(NULL);
+    tm* tPtr = localtime(&t);
+
+    std::string fileName = tPtr->tm_min + ".txt";
+    std::ofstream file(_path + fileName);
+
+    Debug::PrintString(fileName);
+    fileName = _path + fileName;
+    Debug::PrintString(fileName);
+
+    switch (order)
+    {
+        case (EOrder::ID):
+        file << "SORTING BY IDENTIFICATION" << std::endl << std::endl;
+        break;
+
+        case (EOrder::BALANCE):
+        file << "SORTING BY BALANCE" << std::endl << std::endl;
+        break;
+
+        case (EOrder::NAME):
+        file << "SORTING BY ALPHABETICAL ORDER" << std::endl << std::endl;
+        break;
+
+        default:
+        file << "NOT SORTING" << std::endl << std::endl;
+        break;
+    }
+
+    std::vector<Account> users = manager.GetFilteredUsers(order);
 
     for (Account a : users)
     {
         Debug::EndLine();
         Debug::PrintString("ACCOUNT ", EFormat::STAY_LINE);
+        file << "ACCOUNT " << iteration << "/" << size << std::endl;
         Debug::PrintString(iteration, EFormat::STAY_LINE);
         Debug::PrintString("/", EFormat::STAY_LINE);
         Debug::PrintString(size);
         Manager::PrintAccountData(a);
+        Manager::PrintAccountDataToFile(a, file);
+        iteration++;
     }
+
+    file.close(); 
 
     Debug::EndLine();
     Debug::Delay();
